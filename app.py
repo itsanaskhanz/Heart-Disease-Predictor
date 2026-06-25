@@ -18,7 +18,7 @@ div[data-testid="stForm"] {
 )
 
 try:
-    model = joblib.load("heart_model.pkl")
+    model = joblib.load("models/heart_model.pkl")
 except FileNotFoundError:
     st.error("Model file not found.")
     st.stop()
