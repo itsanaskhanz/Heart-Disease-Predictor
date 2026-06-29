@@ -17,35 +17,7 @@ A machine learning project that estimates heart disease risk from patient clinic
 
 The project uses the [Heart Disease UCI dataset](https://archive.ics.uci.edu/dataset/45/heart+disease) (`data/heart.csv`), with **1,025 patient records** and **13 input features**:
 
-| Feature | Description |
-|---------|-------------|
-| `age` | Age in years |
-| `sex` | Sex (0 = female, 1 = male) |
-| `cp` | Chest pain type (0–3) |
-| `trestbps` | Resting blood pressure (mm Hg) |
-| `chol` | Serum cholesterol (mg/dl) |
-| `fbs` | Fasting blood sugar > 120 mg/dl (0 = no, 1 = yes) |
-| `restecg` | Resting electrocardiographic results (0–2) |
-| `thalach` | Maximum heart rate achieved |
-| `exang` | Exercise induced angina (0 = no, 1 = yes) |
-| `oldpeak` | ST depression induced by exercise relative to rest |
-| `slope` | Slope of the peak exercise ST segment (0–2) |
-| `ca` | Number of major vessels colored by fluoroscopy (0–4) |
-| `thal` | Thalassemia (0–3) |
-
 The target column (`target`) is binary: **0 = no heart disease**, **1 = heart disease present**.
-
-## Model Performance
-
-Five models were trained on an 80/20 train-test split (`random_state=42`). The SVM classifier was selected for deployment.
-
-| Model | Accuracy | Precision | Recall | F1 |
-|-------|----------|-----------|--------|-----|
-| Logistic Regression | 0.770 | 0.742 | 0.793 | 0.767 |
-| Naive Bayes | 0.705 | 0.690 | 0.690 | 0.690 |
-| KNN | 0.738 | 0.697 | 0.793 | 0.742 |
-| Decision Tree | 0.738 | 0.667 | 0.897 | 0.765 |
-| **SVM** | **0.754** | **0.706** | **0.828** | **0.762** |
 
 ## Project Structure
 
